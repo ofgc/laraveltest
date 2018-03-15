@@ -16,4 +16,10 @@ class frontController extends Controller
 	public function informes(){
 		return view('informes');
 	}
+	public function crearUsuario(){
+		return view('crearUsuario');
+	}
+	public function buscarAdo(){
+		return view('buscarAdo');
+	}
 }

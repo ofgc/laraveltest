@@ -3,6 +3,8 @@
 namespace ado2018\Providers;
 
 use Illuminate\Support\ServiceProvider;
+//añadido para funcionamiendo del migrate user 15-03-2018
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +15,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        //añadido para funcionamiendo del migrate user 15-03-2018
+        Schema::defaultStringLength(191);
     }
 
     /**

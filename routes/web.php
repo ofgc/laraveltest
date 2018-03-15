@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+use app\Http\Providers\usuario;
 /*Route::get('prueba', function(){
 	return "llamada desde el ruter";
 });
@@ -22,11 +22,19 @@ Route::get('edad/{edad}',function($edad){
 });
 Route::get('nombreopcional/{nombre?}', function($nombre = "jonh"){
 	return "mi nombre es: ".$nombre;
-});
-Route::get('/', function () {
-    return view('welcome');
 });*/
+Route::get('/', function () {
+    return view('auth/login');
+});
 
-Route::get('/', 'frontController@index');
+//Route::get('/', 'frontController@index');
+Route::get('/index', 'frontController@index');
 Route::get('/crearAdo', 'frontController@crearAdo');
 Route::get('/informes', 'frontController@Informes');
+Route::get('/crearUsuario', 'frontController@crearUsuario');
+Route::get('/buscarAdo', frontController@buscarAdo);
+
+//Route::resource('usuario', 'UsuarioController');
+Auth::routes();
+
+

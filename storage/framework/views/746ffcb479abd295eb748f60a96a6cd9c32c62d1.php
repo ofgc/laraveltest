@@ -41,11 +41,11 @@
 				<a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><em class="fa fa-bars"></em></a>
 				
 				<ul class="nav nav-pills flex-column sidebar-nav">
-					<li class="nav-item"><a class="nav-link active" href="index.html"><em class="fa fa-dashboard"></em> Dashboard <span class="sr-only">(current)</span></a></li>
-					<li class="nav-item"><a class="nav-link" href=""><em class="fa fa-calendar-o"></em> Crear ADO</a></li>
-					<li class="nav-item"><a class="nav-link" href="elements.html"><em class="fa fa-hand-o-up"></em>Buscar ADO</a></li>
-					<li class="nav-item"><a class="nav-link" href="cards.html"><em class="fa fa-clone"></em>Informes</a></li>
-					<li class="nav-item"><a class="nav-link" href="charts.html"><em class="fa fa-bar-chart"></em> Gráficos</a></li>
+					<li class="nav-item"><a class="nav-link active" href="../index"><em class="fa fa-dashboard"></em> Dashboard <span class="sr-only">(current)</span></a></li>
+					<li class="nav-item"><a class="nav-link" href="<?php echo e(URL::get('crearAdo')); ?>"><em class="fa fa-calendar-o"></em> Crear ADO</a></li>
+					<li class="nav-item"><a class="nav-link" href="../informes"><em class="fa fa-hand-o-up"></em>Buscar ADO</a></li>
+					<li class="nav-item"><a class="nav-link" href="../buscarAdo"><em class="fa fa-clone"></em>Informes</a></li>
+					<li class="nav-item"><a class="nav-link" href="../graficos"><em class="fa fa-bar-chart"></em> Gráficos</a></li>
 				</ul>
 				<h1 class="site-title"><a href="index.html"><em class="fa fa-rocket"></em> Menu Administrador</a></h1>
 

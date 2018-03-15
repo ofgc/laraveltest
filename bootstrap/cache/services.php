@@ -25,11 +25,13 @@
     21 => 'Illuminate\\View\\ViewServiceProvider',
     22 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     23 => 'Laravel\\Tinker\\TinkerServiceProvider',
-    24 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
-    25 => 'ado2018\\Providers\\AppServiceProvider',
-    26 => 'ado2018\\Providers\\AuthServiceProvider',
-    27 => 'ado2018\\Providers\\EventServiceProvider',
-    28 => 'ado2018\\Providers\\RouteServiceProvider',
+    24 => 'Collective\\Html\\HtmlServiceProvider',
+    25 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+    26 => 'Collective\\Html\\HtmlServiceProvider',
+    27 => 'ado2018\\Providers\\AppServiceProvider',
+    28 => 'ado2018\\Providers\\AuthServiceProvider',
+    29 => 'ado2018\\Providers\\EventServiceProvider',
+    30 => 'ado2018\\Providers\\RouteServiceProvider',
   ),
   'eager' => 
   array (
@@ -150,6 +152,10 @@
     'validator' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'validation.presence' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'command.tinker' => 'Laravel\\Tinker\\TinkerServiceProvider',
+    'html' => 'Collective\\Html\\HtmlServiceProvider',
+    'form' => 'Collective\\Html\\HtmlServiceProvider',
+    'Collective\\Html\\HtmlBuilder' => 'Collective\\Html\\HtmlServiceProvider',
+    'Collective\\Html\\FormBuilder' => 'Collective\\Html\\HtmlServiceProvider',
   ),
   'when' => 
   array (
@@ -190,6 +196,9 @@
     array (
     ),
     'Laravel\\Tinker\\TinkerServiceProvider' => 
+    array (
+    ),
+    'Collective\\Html\\HtmlServiceProvider' => 
     array (
     ),
   ),

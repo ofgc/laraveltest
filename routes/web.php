@@ -32,7 +32,7 @@ Route::get('/index', 'frontController@index');
 Route::get('/crearAdo', 'frontController@crearAdo');
 Route::get('/informes', 'frontController@Informes');
 Route::get('/crearUsuario', 'frontController@crearUsuario');
-Route::get('/buscarAdo', frontController@buscarAdo);
+Route::get('/buscarAdo', 'frontController@buscarAdo');
 
 //Route::resource('usuario', 'UsuarioController');
 Auth::routes();

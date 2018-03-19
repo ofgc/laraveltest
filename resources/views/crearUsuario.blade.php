@@ -2,6 +2,34 @@
 
   @section('content')
 
+    {!!Form::open(['route' => 'UsuarioController'])!!}
+    <div class="container">
+        <h2>Registro de usuario</h2>
+        <div class="form-group">
+            {!! Form::label('Nombre de usuario:') !!}
+            {!! Form::text('usr', null,['class'=>'form-control', 'placeholder'=>'Introduce nombre completo']) !!}
+        </div>
+        <div class="form-group">
+            {!! Form::label('Correo electronico') !!}
+            {!! Form::text('email', null,['class'=>'form-control', 'placeholder'=>'Introduce email']) !!}
+        </div>
+        <div class="form-group">
+            {!! Form::label('Contraseña:') !!}
+            {!! Form::password('password:',['class'=>'form-control' , 'placeholder'=>'Introduce password']) !!}
+        </div>
+        <div class="form-group">
+            {!! Form::label('confirmar contraseña:') !!}
+            {!! Form::password('confirmPassword:',['class'=>'form-control' , 'placeholder'=>'vuelve a escribir la contraseña']) !!}
+        </div>
+            {!! Form::submit('Registrar usuario',['class' => 'btn btn-primary']) !!}
+            {!! Form::checkbox('remember') !!}
+            {!! Form::label('Guardar contraseña:') !!}
+            
+    </div>
+
+    {!!Form::close()!!}
+
+<!--
     <div class="container">
     <h2>Registrar nuevo usuario</h2>
       <form>
@@ -27,5 +55,5 @@
       </label>
       </form>
     </div>
-  
+ --> 
   @stop

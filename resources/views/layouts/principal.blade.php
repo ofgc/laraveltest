@@ -37,7 +37,7 @@
 				
 				<ul class="nav nav-pills flex-column sidebar-nav">
 					<li class="nav-item"><a class="nav-link active" href="../index"><em class="fa fa-dashboard"></em> Dashboard <span class="sr-only">(current)</span></a></li>
-					<li class="nav-item"><a class="nav-link" href="{{('crearAdo')}}"><em class="fa fa-calendar-o"></em> Crear ADO</a></li>
+					<li class="nav-item"><a class="nav-link" href="{{action('UsuariosController@store')}}"><em class="fa fa-calendar-o"></em> Crear ADO</a></li>
 					<li class="nav-item"><a class="nav-link" href="../informes"><em class="fa fa-hand-o-up"></em>Buscar ADO</a></li>
 					<li class="nav-item"><a class="nav-link" href="../buscarAdo"><em class="fa fa-clone"></em>Informes</a></li>
 					<li class="nav-item"><a class="nav-link" href="../graficos"><em class="fa fa-bar-chart"></em> Gráficos</a></li>

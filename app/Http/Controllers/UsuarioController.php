@@ -34,7 +34,8 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //Puesto por Juanma 
+        return "ha almacenado los datos del ususario"
     }
 
     /**
